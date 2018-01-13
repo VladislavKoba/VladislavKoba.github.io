@@ -1,0 +1,334 @@
+body{
+	margin: 0px;
+}
+
+.nav{
+	position: fixed;
+	right: 20px;
+	top:30%;
+	z-index: 4;
+	text-align: right;
+}
+.nav li{
+	list-style-type: none;
+}
+.nav a{
+	text-decoration: none;
+	color: #515050;
+}
+.nav a span{
+	color: transparent;
+	font-family: 'Helvetica';
+	text-transform: uppercase;
+}
+.nav a:hover span {
+	color: #c1c1c1;
+	-webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+}
+.nav a.active{
+	color: #47f705;
+}
+.active{
+	color:#47f705;
+}
+
+
+.menu{
+	height: 10vh;
+	background-color: transparent;
+}
+.menu span{
+	position: absolute;
+	left: 20px;
+	top:1.5vh;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 2em;
+}
+.menu ul{
+	position: absolute;
+	right: 20px;
+	top:3.5vh;
+	margin:0;
+}
+.menu ul li{
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	list-style-type: none;
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 1em;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: black;
+}
+.menu ul li a:hover{
+	color: #47f705;
+	transition: 1s;
+}
+
+.parallax-window {
+    background: transparent;
+}
+
+#main_foto{
+	height: 400px;
+}
+#main_foto_contact{
+	height: 400px;
+}
+
+#about{
+	height: 100vh;
+	margin: 10vh;
+}
+#about h2{
+	text-align: center;
+	font-family: 'Helvetica';
+	color: #515050;
+}
+#about p{
+	font-family: 'Helvetica';
+	color: #515050;
+	padding-left: 25vw;
+	padding-right: 25vw;
+	padding-top: 6vh;
+	line-height: 1.5;
+}
+.about_img{
+	float:left;
+	padding-top: 10vh;
+	padding-left: 30vh;
+	position: relative;
+}
+
+#about_image1{
+	height: 12vh;
+	width: 5vw;
+	background: url(../images/about1.png) no-repeat;
+	background-size: cover;
+}
+#about_image2{
+	height: 12vh;
+	width: 5vw;
+	background: url(../images/about4.png) no-repeat;
+	background-size: cover;
+}
+#about_image3{
+	height: 12vh;
+	width: 5vw;
+	background: url(../images/about2.png) no-repeat;
+	background-size: cover;
+}
+#about_image4{
+	height: 12vh;
+	width: 5vw;
+	background: url(../images/about3.png) no-repeat;
+	background-size: cover;
+}
+.about_txt{
+	float:left;
+	padding-top: 5vh;
+	position: relative;
+	height: 12vh;
+	width: 15vw;
+	font-family: 'Helvetica';
+	color: #515050;
+	line-height: 1.5;
+}
+#about_txt1{
+	padding-left: 20vh;
+}
+.about_txt2-3-4{
+	padding-left: 10vh;
+}
+
+#car{
+	text-align: center;
+	font-family: 'Helvetica';
+	color: #515050;
+}
+
+div#carousel { 
+  perspective: 1200px; 
+  background: #fff; 
+  padding-top: 0; 
+  padding-left: 5vw;
+  font-size:0; 
+  margin-bottom: 3rem; 
+  overflow: hidden; 
+}
+figure#spinner { 
+  transform-style: preserve-3d; 
+  height: 300px; 
+  padding-top: 10px;
+  transform-origin: 50% 50% -500px; 
+  transition: 2s; 
+} 
+figure#spinner a{ 
+  width: 40%; max-width: 380px; 
+  position: absolute; left: 31.5%;
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner img{ 
+  width: 100%; max-width: 415px; 
+  position: absolute; 
+  transform-origin: 50% 50% -500px;
+  outline:1px solid transparent; 
+}
+figure#spinner a:nth-child(1) { transform:rotateY(0deg); }
+figure#spinner a:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner a:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner a:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner a:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner a:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner a:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner a:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+  color: #000; 
+  margin: 5%; 
+  display: inline-block; 
+  text-decoration: none; 
+  font-size: 2rem; 
+  transition: 0.6s color; 
+  position: relative; 
+  margin-top: -6rem; 
+  border-bottom: none; 
+  line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+
+
+#expepience{
+	height: 120vh;
+	margin: 10vh;
+}
+#expepience h2{
+	text-align: center;
+	font-family: 'Helvetica';
+	color: #515050;
+}
+#expepience h3{
+	float: left;
+	padding-left:20vw;
+	padding-top: 20vh; 
+	text-align: center;
+	font-family: 'Helvetica';
+	color: #515050;
+}
+#expepience p{
+	font-family: 'Helvetica';
+	padding-left: 25vw;
+	padding-right: 25vw;
+	padding-top: 6vh;
+	line-height: 1.5;
+	color: #515050;
+}
+#expepience span{
+	font-family: 'Helvetica';
+	font-weight: bold;
+	padding-left: 65vw;
+	padding-top: 6vh;
+	line-height: 1.5;
+	color: #515050;
+}
+.expepience_img{
+	float:left;
+	padding-top: 10vh;
+	padding-left: 40vh;
+	position: relative;
+}
+
+#expepience_image1{
+	height: 12vh;
+	width: 6vw;
+	background: url(../images/expepience1.png) no-repeat;
+	background-size: cover;
+}
+#expepience_image2{
+	height: 12vh;
+	width: 5vw;
+	background: url(../images/expepience2.png) no-repeat;
+	background-size: cover;
+}
+#expepience_image3{
+	height: 12vh;
+	width: 5vw;
+	background: url(../images/expepience3.png) no-repeat;
+	background-size: cover;
+}
+
+.expepience_txt{
+	float:left;
+	padding-top: 5vh;
+	position: relative;
+	height: 12vh;
+	width: 20vw;
+	font-family: 'Helvetica';
+	line-height: 1.5;
+	color: #515050;
+}
+#expepience_txt1{
+	padding-left: 28vh;
+}
+.expepience_txt2-3{
+	padding-left: 10vh;
+}
+
+#contact{
+	height:28vh;
+	margin: 10vh;
+}
+#contact h2{
+	text-align: center;
+	font-family: 'Helvetica';
+	color: #515050;
+}
+#contact ul{
+	font-family: 'Helvetica';
+	padding-left: 15vw;
+	padding-top: 5vh;
+	line-height: 1.5;
+	color: #515050;
+	list-style-type: none;
+	float: left;
+}
+#contact ul li a{
+	text-decoration: none;
+	color: #515050;
+}
+#contact ul li a:hover{
+	color: red;
+}
+#contact ul li:first-child span{
+	color: #4367b3;
+	font-weight: bold;
+}
+#contact ul li:nth-child(2) span{
+	color: #cd486b;
+	font-weight: bold;
+}
+#contact ul li:nth-child(3) span{
+	color: #0088cc;
+	font-weight: bold;	
+}
+#contact p{
+	padding-top: 5vh;
+	padding-left: 20vw;
+	float: left;
+	font-family: 'Helvetica';
+	line-height: 1.5;
+	color: #515050;
+}
+
+#footer{
+	height: 10vh;
+	background-color: #515050;;
+	padding-top:5vh;
+	padding-left: 5vw;
+	font-family: 'Helvetica';
+	color: #fff;
+}
