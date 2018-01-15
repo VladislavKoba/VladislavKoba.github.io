@@ -44,7 +44,7 @@ body{
 	left: 20px;
 	top:1.5vh;
 	font-family: 'Fredericka the Great', cursive;
-	font-size: 2em;
+	font-size: 2.4vw;
 }
 .menu ul{
 	position: absolute;
@@ -58,7 +58,6 @@ body{
 	margin-left: 20px;
 	list-style-type: none;
 	font-family: 'Fredericka the Great', cursive;
-	font-size: 1em;
 }
 .menu ul li a{
 	text-decoration: none;
@@ -82,7 +81,9 @@ body{
 
 #about{
 	height: 100vh;
-	margin: 10vh;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	min-height: 800px;
 }
 #about h2{
 	text-align: center;
@@ -92,38 +93,44 @@ body{
 #about p{
 	font-family: 'Helvetica';
 	color: #515050;
-	padding-left: 25vw;
-	padding-right: 25vw;
+	padding-left: 30vw;
+	padding-right: 30vw;
 	padding-top: 6vh;
 	line-height: 1.5;
+	min-width: 200px;
 }
 .about_img{
 	float:left;
 	padding-top: 10vh;
-	padding-left: 30vh;
 	position: relative;
 }
-
+#abi1{
+	padding-left: 25vw;
+}
+.abi2-3-4{
+	padding-left: 10vw;
+}
 #about_image1{
-	height: 12vh;
+	height: 5vw;
 	width: 5vw;
 	background: url(../images/about1.png) no-repeat;
 	background-size: cover;
+
 }
 #about_image2{
-	height: 12vh;
+	height: 5vw;
 	width: 5vw;
 	background: url(../images/about4.png) no-repeat;
 	background-size: cover;
 }
 #about_image3{
-	height: 12vh;
+	height: 5vw;
 	width: 5vw;
 	background: url(../images/about2.png) no-repeat;
 	background-size: cover;
 }
 #about_image4{
-	height: 12vh;
+	height: 5vw;
 	width: 5vw;
 	background: url(../images/about3.png) no-repeat;
 	background-size: cover;
@@ -132,27 +139,31 @@ body{
 	float:left;
 	padding-top: 5vh;
 	position: relative;
-	height: 12vh;
+	height: 12vw;
 	width: 15vw;
 	font-family: 'Helvetica';
 	color: #515050;
 	line-height: 1.5;
+	font-size: 1.2vw;
 }
 #about_txt1{
-	padding-left: 20vh;
+	padding-left: 20vw;
 }
 .about_txt2-3-4{
-	padding-left: 10vh;
+	padding-left: 0.7vw;
+}
+#foto{
+	height: 50vh;
 }
 
-#car{
+#foto h2{
 	text-align: center;
 	font-family: 'Helvetica';
 	color: #515050;
 }
 
 div#carousel { 
-  perspective: 1200px; 
+  perspective: 100vw; 
   background: #fff; 
   padding-top: 0; 
   padding-left: 5vw;
@@ -168,13 +179,13 @@ figure#spinner {
   transition: 2s; 
 } 
 figure#spinner a{ 
-  width: 40%; max-width: 380px; 
+  width: 40%; max-width: 28vw; 
   position: absolute; left: 31.5%;
   transform-origin: 50% 50% -500px;
   outline:1px solid transparent; 
 }
 figure#spinner img{ 
-  width: 100%; max-width: 415px; 
+  width: 100%; max-width: 28vw; 
   position: absolute; 
   transform-origin: 50% 50% -500px;
   outline:1px solid transparent; 
@@ -204,7 +215,8 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
 #expepience{
 	height: 120vh;
-	margin: 10vh;
+	margin-top: 10vh;
+	min-height: 1000px;
 }
 #expepience h2{
 	text-align: center;
@@ -218,6 +230,7 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 	text-align: center;
 	font-family: 'Helvetica';
 	color: #515050;
+
 }
 #expepience p{
 	font-family: 'Helvetica';
@@ -238,24 +251,24 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 .expepience_img{
 	float:left;
 	padding-top: 10vh;
-	padding-left: 40vh;
+	padding-left: 22vw;
 	position: relative;
 }
 
 #expepience_image1{
-	height: 12vh;
-	width: 6vw;
+	height: 5vw;
+	width: 5vw;
 	background: url(../images/expepience1.png) no-repeat;
 	background-size: cover;
 }
 #expepience_image2{
-	height: 12vh;
+	height: 5vw;
 	width: 5vw;
 	background: url(../images/expepience2.png) no-repeat;
 	background-size: cover;
 }
 #expepience_image3{
-	height: 12vh;
+	height: 5vw;
 	width: 5vw;
 	background: url(../images/expepience3.png) no-repeat;
 	background-size: cover;
@@ -270,17 +283,19 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 	font-family: 'Helvetica';
 	line-height: 1.5;
 	color: #515050;
+	font-size: 1.2vw;
 }
 #expepience_txt1{
-	padding-left: 28vh;
+	padding-left: 17vw;
 }
 .expepience_txt2-3{
-	padding-left: 10vh;
+	padding-left: 7vw;
 }
 
 #contact{
 	height:28vh;
-	margin: 10vh;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
 }
 #contact h2{
 	text-align: center;
@@ -289,12 +304,13 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 }
 #contact ul{
 	font-family: 'Helvetica';
-	padding-left: 15vw;
+	padding-left: 20vw;
 	padding-top: 5vh;
 	line-height: 1.5;
 	color: #515050;
 	list-style-type: none;
 	float: left;
+	font-size: 1.2vw;
 }
 #contact ul li a{
 	text-decoration: none;
