@@ -513,7 +513,7 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 	}
 	#contact p{
 		padding-top: 1vh;
-		padding-left: 0vw;
+		padding-left: 20vw;
 		font-size: 1.2vh;
 	}
 
