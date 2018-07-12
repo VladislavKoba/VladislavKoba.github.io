@@ -20,6 +20,7 @@ body{
 	color: transparent;
 	font-family: 'Helvetica';
 	text-transform: uppercase;
+
 }
 .nav a:hover span {
 	color: #c1c1c1;
@@ -36,26 +37,27 @@ body{
 
 
 .menu{
-	height: 10vh;
+	height: 5vw;
 	background-color: transparent;
 }
 .menu span{
 	position: absolute;
-	left: 20px;
-	top:1.5vh;
+	left: 1vw;
+	top:1vw;
 	font-family: 'Fredericka the Great', cursive;
-	font-size: 2.4vw;
+	font-size: 2.5vw;
 }
 .menu ul{
 	position: absolute;
-	right: 20px;
-	top:3.5vh;
+	right: 1vw;
+	top:1vw;
 	margin:0;
+	font-size: 2.5vw;
 }
 .menu ul li{
 	float: left;
 	position: relative;
-	margin-left: 20px;
+	margin-left: 2vw;
 	list-style-type: none;
 	font-family: 'Fredericka the Great', cursive;
 }
@@ -80,15 +82,17 @@ body{
 }
 
 #about{
-	height: 100vh;
+	max-height: 100vh;
 	margin-top: 10vh;
-	margin-bottom: 10vh;
-	min-height: 800px;
+	min-width: 100vw;
+	display: inline-block;
+
 }
 #about h2{
 	text-align: center;
 	font-family: 'Helvetica';
 	color: #515050;
+	font-size: 1.5vw;
 }
 #about p{
 	font-family: 'Helvetica';
@@ -98,25 +102,31 @@ body{
 	padding-top: 6vh;
 	line-height: 1.5;
 	min-width: 200px;
+	font-size: 1.2vw;
 }
+
+#about_sector{
+	padding-left: 22.5vw;
+	padding-top: 5vh;display: inline-block;
+}
+
+.about_block{
+	float: left;
+	width: 15vw;
+}
+
 .about_img{
-	float:left;
-	padding-top: 10vh;
-	position: relative;
+	margin-left: 5vw;
 }
-#abi1{
-	padding-left: 25vw;
-}
-.abi2-3-4{
-	padding-left: 10vw;
-}
+
 #about_image1{
 	height: 5vw;
 	width: 5vw;
 	background: url(../images/about1.png) no-repeat;
 	background-size: cover;
-
 }
+
+
 #about_image2{
 	height: 5vw;
 	width: 5vw;
@@ -146,14 +156,13 @@ body{
 	line-height: 1.5;
 	font-size: 1.2vw;
 }
-#about_txt1{
-	padding-left: 20vw;
-}
-.about_txt2-3-4{
-	padding-left: 0.7vw;
-}
+
+
+
 #foto{
-	height: 50vh;
+	max-height: 50vh;
+	width: 100vw;
+    display: inline-block;
 }
 
 #foto h2{
@@ -173,21 +182,21 @@ div#carousel {
 }
 figure#spinner { 
   transform-style: preserve-3d; 
-  height: 300px; 
-  padding-top: 10px;
-  transform-origin: 50% 50% -500px; 
+  height: 50vh; 
+  padding-top: 5vh;
+  transform-origin: 50% 50% -80vh; 
   transition: 2s; 
 } 
 figure#spinner a{ 
   width: 40%; max-width: 28vw; 
   position: absolute; left: 31.5%;
-  transform-origin: 50% 50% -500px;
+  transform-origin: 50% 50% -80vh;
   outline:1px solid transparent; 
 }
 figure#spinner img{ 
-  width: 100%; max-width: 28vw; 
+  width: 100%; max-width: 28vw; min-width: 20vw;
   position: absolute; 
-  transform-origin: 50% 50% -500px;
+  transform-origin: 50% 50% -80vh;
   outline:1px solid transparent; 
 }
 figure#spinner a:nth-child(1) { transform:rotateY(0deg); }
@@ -214,23 +223,31 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 
 
 #expepience{
-	height: 120vh;
+	
 	margin-top: 10vh;
-	min-height: 1000px;
+	margin-bottom: 10vh;
+	
+	display: inline-block;
 }
 #expepience h2{
 	text-align: center;
 	font-family: 'Helvetica';
 	color: #515050;
+	font-size: 1.5vw;
 }
 #expepience h3{
 	float: left;
 	padding-left:20vw;
-	padding-top: 20vh; 
+	padding-top: 10vh; 
 	text-align: center;
 	font-family: 'Helvetica';
 	color: #515050;
+	font-size: 1.5vw;
 
+}
+#confucius{
+	margin-top: 10vh;
+	display: inline-block;
 }
 #expepience p{
 	font-family: 'Helvetica';
@@ -239,6 +256,7 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 	padding-top: 6vh;
 	line-height: 1.5;
 	color: #515050;
+	font-size: 1.2vw;
 }
 #expepience span{
 	font-family: 'Helvetica';
@@ -247,12 +265,20 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 	padding-top: 6vh;
 	line-height: 1.5;
 	color: #515050;
+	font-size: 1.5vw;
 }
-.expepience_img{
-	float:left;
-	padding-top: 10vh;
+#experience_sector{
 	padding-left: 22vw;
+	padding-top: 5vh;
+}
+.expepience_block{
+	float:left;
 	position: relative;
+	width: 20vw;
+}
+
+.experience_img{
+	margin-left: 5vw;
 }
 
 #expepience_image1{
@@ -285,22 +311,18 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 	color: #515050;
 	font-size: 1.2vw;
 }
-#expepience_txt1{
-	padding-left: 17vw;
-}
-.expepience_txt2-3{
-	padding-left: 7vw;
-}
 
 #contact{
-	height:28vh;
+	display: inline-block;
 	margin-top: 10vh;
 	margin-bottom: 10vh;
+	width: 100vw;
 }
 #contact h2{
 	text-align: center;
 	font-family: 'Helvetica';
 	color: #515050;
+	font-size: 1.5vw;
 }
 #contact ul{
 	font-family: 'Helvetica';
@@ -338,7 +360,14 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 	font-family: 'Helvetica';
 	line-height: 1.5;
 	color: #515050;
+	font-size: 1.2vw;
 }
+#contact p a{
+	text-decoration: none;
+	color: #515050;
+}
+#contact p a:hover{
+	color: red;}
 
 #footer{
 	height: 10vh;
@@ -347,4 +376,151 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 	padding-left: 5vw;
 	font-family: 'Helvetica';
 	color: #fff;
+	font-size: 1.2vw;
+}
+
+@media screen and (max-device-width: 1100px){
+	figure#spinner {height: 30vh;  }
+}
+
+@media screen and (max-device-width: 900px){
+  figure#spinner {height: 20vh;  }
+ 
+}
+
+@media screen and (max-device-width: 700px){
+	#about h2{
+		font-size: 2.5vh;
+	}
+	#about p{
+		padding-left: 10vw;
+		padding-right: 10vw;
+		padding-top: 1vh;
+		min-width: 200px;
+		font-size: 2vh;
+	}
+	#about_sector{
+		padding-left: 20vw;
+	}
+	.about_block{
+		width: 80vw;
+	}
+
+	.about_img{
+		margin-left: 20vw;
+	}
+	#about_image1{
+		height: 15vw;
+		width: 15vw;
+	}
+
+	#about_image2{
+		height: 15vw;
+		width: 15vw;
+	}
+	#about_image3{
+		height: 15vw;
+		width: 15vw;
+	}
+	#about_image4{
+		height: 15vw;
+		width: 15vw;
+	}
+	.about_txt{
+		padding-top: 5vh;
+		height: 30vw;
+		width: 60vw;
+		font-size: 2vh;
+	}
+
+	#foto h2{
+		font-size: 2vh;
+	}
+	#exp #main_foto{
+		display: none;
+	}
+
+	#expepience h2{
+	font-size: 2.5vh;
+	}
+	#expepience h3{
+		padding-left:5vw;
+		padding-top: 2vh; 
+		font-size: 2.5vh;
+		min-width: 200px;
+	}
+	#expepience p{
+		padding-left: 10vw;
+		padding-right: 10vw;
+		padding-top: 1vh;
+		min-width: 200px;
+		font-size: 1vh;
+	}
+	#expepience span{
+		padding-left: 65vw;
+		padding-top: 6vh;
+		font-size: 2vh;
+	}
+	#experience_sector{
+		padding-left: 20vw;
+		padding-top: 1vh;
+	}
+	.expepience_block{
+		float:left;
+		position: relative;
+		width: 80vw;
+
+	}
+
+	.experience_img{
+		margin-left: 20vw;
+	}
+
+	#expepience_image1{
+		height: 15vw;
+		width: 15vw;
+	}
+	#expepience_image2{
+		height: 15vw;
+		width: 15vw;
+	}
+	#expepience_image3{
+		height: 15vw;
+		width: 15vw;
+	}
+
+	.expepience_txt{
+		padding-top: 1vh;
+		height: 15vh;
+		width: 60vw;
+		font-size: 2vh;
+	}
+	#main_foto_contact{
+		height: 300px;
+	}
+	#contact{
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	width: 100vw;
+	}
+	#contact h2{
+		font-size: 2.5vh;
+	}
+	#contact ul{
+		padding-left: 5vw;
+		padding-top: 1vh;
+		font-size: 1.2vh;
+	}
+	#contact p{
+		padding-top: 1vh;
+		padding-left: 0vw;
+		font-size: 1.2vh;
+	}
+
+	#footer{
+		height: 10vh;
+		padding-top:5vh;
+		padding-left: 5vw;
+		font-size: 2vw;
+	}
 }
