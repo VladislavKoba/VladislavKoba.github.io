@@ -258,6 +258,15 @@ div#carousel ~ span:hover { color: #888; cursor: pointer; }
 	color: #515050;
 	font-size: 1.2vw;
 }
+
+#expepience p a{
+	text-decoration: none;
+	color: #515050;
+}
+#expepience p a:hover{
+	color: #47f705;
+}
+
 #expepience span{
 	font-family: 'Helvetica';
 	font-weight: bold;
