@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>spacex</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div id="first-part"></div>
+		<div id="second-part"></div>
+		<div id="third-part-sprite"></div>
+	</div>
+	<script type="text/javascript">
+		window.onscroll = function() {
+		  var scrolled = (window.pageYOffset || document.documentElement.scrollTop)/4;
+		  document.getElementById('first-part').style.margin = (200+scrolled*3.5)+'px auto 0';
+		  document.getElementById('second-part').style.margin = (242+scrolled*3.7)+'px auto 0';
+		  document.getElementById('third-part-sprite').style.backgroundPosition = '-'+(1024*Math.ceil(scrolled*4/100))+'px'+' 0px';;
+		}
+	</script>
+</body>
+</html>
